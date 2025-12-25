@@ -1,16 +1,29 @@
-# todo_demo_app
+# Todo App Assessment
 
-A new Flutter project.
+Hello! I have created this simple Todo App to show my skills in Flutter BLoC and Clean Architecture.
 
-## Getting Started
+This app is basically for managing daily tasks. Main feature is that it is working fully offline also. If your internet is not working, data will save in local database. When internet connection comes back, it will automatically sync data with the server.
 
-This project is a starting point for a Flutter application.
+### Features
+- **Task List**: You can see all your pending works here.
+- **CRUD Operations**: Add, Edit and Delete tasks easily.
+- **Offline Mode**: If net is off, app will still work properly.
+- **Auto Sync**: Data will upload to server when you are online.
+- **Search**: Simple search option to find your tasks.
 
-A few resources to get you started if this is your first Flutter project:
+### How to Run Project
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+1. First, check if Flutter is installed in your system.
+2. Clone this repository to your laptop.
+3. Run command `flutter pub get` to download all packages.
+4. Then run `flutter run` to start the application.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+> **Important Note:** You need a mock server for API to work properly. I suggest using `json-server` on port 3000 (check `api_constants.dart` file).
+
+### Technologies Used
+- **Flutter**: For making the UI.
+- **BLoC**: For managing state of the app.
+- **Dio**: For calling APIs.
+- **Sqflite**: For saving data locally.
+- **GetIt**: For dependency injection.
+
